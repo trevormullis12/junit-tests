@@ -1,13 +1,15 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Student {
     private long id;
     private String name;
-    private ArrayList<Integer> grades = new ArrayList<>();
+    private List<Integer> grades;
 
     public Student(long id, String name) {
         this.id = id;
         this.name = name;
+        grades = new ArrayList<>();
     }
     // returns the student's id
     public long getId() {
